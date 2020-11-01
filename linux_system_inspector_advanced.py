@@ -2,7 +2,10 @@
 # import the module
 import psutil
 import datetime
+import yagmail
 
+#enable automatic email
+send_email = False
 
 def linux_monitor(time):
     """
@@ -32,6 +35,11 @@ def linux_monitor(time):
     f = open('log.txt', 'a')
     f.write(log_str)
     f.close()
+
+    #send automatic email
+    if send_email == True and (cpu_per > 80 or memory_info.percent > 80 ):
+        ya_obj = yagmail.SMTP(user='', password='')
+        ya_obj.send('', "ygmail test", log_str)
 
 
 def main():
