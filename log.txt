@@ -1,0 +1,6 @@
+		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-10-31 23:54:00 				25.3% 								 74.1% 															 21.4% t					 Rec: 443756244 / Send: 3796467		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:10:37 				3.7% 								 74.7% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:11:45 				5.3% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:11:55 				0.7% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:12:05 				0.9% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430
