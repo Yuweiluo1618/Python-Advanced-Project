@@ -4,4 +4,6 @@
 2020-11-01 01:11:45 				5.3% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
 2020-11-01 01:11:55 				0.7% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
 2020-11-01 01:12:05 				0.9% 								 74.6% 															 21.4% t					 Rec: 443803169 / Send: 3825430		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
-2020-11-01 01:24:11 				1.8% 								 81.0% 															 21.6% t					 Rec: 455677459 / Send: 4418471
+2020-11-01 01:24:11 				1.8% 								 81.0% 															 21.6% t					 Rec: 455677459 / Send: 4418471		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:53:01 				1.2% 								 83.2% 															 21.6% t					 Rec: 457722354 / Send: 4785998		Time 				 CPU info (core:4) 				 Memory info (total:3.8168411254882812G) 				 Hard disk info (total: 48.47021484375G) 				 Networl info 
+2020-11-01 01:57:56 				0.2% 								 83.3% 															 21.6% t					 Rec: 457725465 / Send: 4788496

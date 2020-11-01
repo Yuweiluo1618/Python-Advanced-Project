@@ -1,6 +1,8 @@
-#import the module
+#!/bin/python3
+# import the module
 import psutil
 import datetime
+
 
 def linux_monitor(time):
     """
@@ -31,11 +33,11 @@ def linux_monitor(time):
     f.write(log_str)
     f.close()
 
+
 def main():
     """program entrance"""
     while True:
         linux_monitor(10)
-
 
 
 if __name__ == "__main__":
