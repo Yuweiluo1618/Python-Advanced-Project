@@ -1,4 +1,5 @@
 import socket
+import threading
 #This is 4399 like game server developer can add and deploy own game in game_path_dir
 class GameServer(object):
     def __init__(self):
@@ -10,8 +11,6 @@ class GameServer(object):
         self.game_path_dir = dict()
         #add game name and path here
         self.game_path_dir['snake'] = './Snake'
-        self.game_path_dir['count-99'] = './count-99'
-        self.game_path_dir['pingpoing'] = './pingpoing'
         self.cur_path = ''
         self.project_init()
 
@@ -30,7 +29,10 @@ class GameServer(object):
         while True:
             new_client_socket, ip_port = self.tcp_server_socket.accept()
             print(f'client {str(ip_port)} has connected')
-            self.http_handler(new_client_socket, ip_port)
+            th1 = threading.Thread(target=self.http_handler, args=(new_client_socket, ip_port))
+            th1.setDaemon(True)
+            th1.start()
+
 
     def http_handler(self, new_client_socket, ip_port):
         recv_data = new_client_socket.recv(4096)
