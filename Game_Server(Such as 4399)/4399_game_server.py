@@ -1,5 +1,6 @@
 import socket
 import threading
+import multiprocessing
 #This is 4399 like game server developer can add and deploy own game in game_path_dir
 class GameServer(object):
     def __init__(self):
@@ -29,9 +30,14 @@ class GameServer(object):
         while True:
             new_client_socket, ip_port = self.tcp_server_socket.accept()
             print(f'client {str(ip_port)} has connected')
-            th1 = threading.Thread(target=self.http_handler, args=(new_client_socket, ip_port))
-            th1.setDaemon(True)
-            th1.start()
+            #th1 = threading.Thread(target=self.http_handler, args=(new_client_socket, ip_port))
+            #th1.setDaemon(True)
+            #th1.start()
+
+            game_process =multiprocessing.Process(target=self.http_handler, args=(new_client_socket, ip_port))
+            game_process.start()
+
+            new_client_socket.close()
 
 
     def http_handler(self, new_client_socket, ip_port):
