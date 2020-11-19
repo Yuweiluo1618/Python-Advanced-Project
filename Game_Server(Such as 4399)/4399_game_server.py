@@ -34,7 +34,7 @@ class GameServer(object):
             #th1.setDaemon(True)
             #th1.start()
 
-            game_process =multiprocessing.Process(target=self.http_handler, args=(new_client_socket, ip_port))
+            game_process = multiprocessing.Process(target=self.http_handler, args=(new_client_socket, ip_port))
             game_process.start()
 
             new_client_socket.close()
