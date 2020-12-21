@@ -21,9 +21,10 @@ def get_down_load_links(link_list):
         if down_load_link:
             store_to_database(down_load_link.group(1), movie_name, cur, conn)
             #print(down_load_link.group(1))
-
         else:
             print("match fail")
+    cur.close()
+    conn.close()
 
 def store_to_database(movie_link, movie_name, cur, conn):
 
@@ -35,6 +36,7 @@ def store_to_database(movie_link, movie_name, cur, conn):
 
     else:
         print("movie has existed")
+
 
 def exist_database(movie_name, cur):
     params = [movie_name]
